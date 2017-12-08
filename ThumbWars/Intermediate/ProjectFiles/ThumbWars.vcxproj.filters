@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\ThumbWars.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{2A371770-B18A-4677-BB9A-2B1C6ADFFC11}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\ThumbWars.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\ThumbWarsEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{20AFA97A-E1E4-43FD-AC32-CFAF504DAFBE}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEditorSettings.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\ThumbWars">
+			<UniqueIdentifier>{98F3EF05-22B9-4488-8504-A3C76379C75D}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\ThumbWars\FPSCharacter.cpp">
+			<Filter>Source\ThumbWars</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ThumbWars\FPSCharacter.h">
+			<Filter>Source\ThumbWars</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\ThumbWars\ThumbWars.Build.cs">
+			<Filter>Source\ThumbWars</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\ThumbWars\ThumbWars.cpp">
+			<Filter>Source\ThumbWars</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ThumbWars\ThumbWars.h">
+			<Filter>Source\ThumbWars</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>

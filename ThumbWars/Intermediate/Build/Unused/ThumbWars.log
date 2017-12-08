@@ -1,0 +1,10 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Compiling game modules for hot reload
+  Performing 3 actions (4 in parallel)
+  FPSCharacter.cpp
+  [2/3] Link UE4Editor-ThumbWars-4714.dll
+  [3/3] Link UE4Editor-ThumbWars-4714.lib
+     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.suppressed.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.suppressed.exp
+     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.exp
+  Deploying ThumbWarsEditor Win64 Development...
+  Total build time: 3.07 seconds (Local executor: 1.62 seconds)

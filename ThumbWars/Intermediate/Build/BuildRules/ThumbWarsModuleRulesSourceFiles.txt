@@ -1,0 +1,3 @@
+C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Source\ThumbWars\ThumbWars.Build.cs
+C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Source\ThumbWars.Target.cs
+C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Source\ThumbWarsEditor.Target.cs
