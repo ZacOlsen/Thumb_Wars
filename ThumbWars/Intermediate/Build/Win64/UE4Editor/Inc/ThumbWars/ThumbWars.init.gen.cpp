@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeThumbWars_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/ThumbWars",
 				PKG_CompiledIn | 0x00000000,
-				0x33140BD6,
-				0x4D48CDC0,
+				0xCF177C2C,
+				0xAD1A78D7,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

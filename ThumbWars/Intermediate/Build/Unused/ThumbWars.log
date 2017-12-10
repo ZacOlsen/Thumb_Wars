@@ -1,10 +1,16 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
+  Creating makefile for hot reloading ThumbWarsEditor (ini files are newer than UBTMakefile)
   Compiling game modules for hot reload
-  Performing 3 actions (4 in parallel)
+  Parsing headers for ThumbWarsEditor
+    Running UnrealHeaderTool "C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\ThumbWars.uproject" "C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\ThumbWarsEditor\Development\ThumbWarsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+  Reflection code generated for ThumbWarsEditor in 20.565575 seconds
+  Performing 5 actions (4 in parallel)
+  FPSCharacter.gen.cpp
+  ThumbWars.init.gen.cpp
   FPSCharacter.cpp
-  [2/3] Link UE4Editor-ThumbWars-4714.dll
-  [3/3] Link UE4Editor-ThumbWars-4714.lib
-     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.suppressed.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.suppressed.exp
-     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-4714.exp
+  [4/5] Link UE4Editor-ThumbWars-8956.dll
+  [5/5] Link UE4Editor-ThumbWars-8956.lib
+     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.exp
+     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.suppressed.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.suppressed.exp
   Deploying ThumbWarsEditor Win64 Development...
-  Total build time: 3.07 seconds (Local executor: 1.62 seconds)
+  Total build time: 322.73 seconds (Local executor: 200.89 seconds)

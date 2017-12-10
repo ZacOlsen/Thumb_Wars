@@ -17,9 +17,97 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	THUMBWARS_API UClass* Z_Construct_UClass_AFPSCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_ThumbWars();
+	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward();
+	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
+	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_StartJump();
+	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_StopJump();
 // End Cross Module References
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
+		UClass* Class = AFPSCharacter::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "MoveForward", (Native)&AFPSCharacter::execMoveForward },
+			{ "MoveRight", (Native)&AFPSCharacter::execMoveRight },
+			{ "StartJump", (Native)&AFPSCharacter::execStartJump },
+			{ "StopJump", (Native)&AFPSCharacter::execStopJump },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward()
+	{
+		struct FPSCharacter_eventMoveForward_Parms
+		{
+			float value;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value = { UE4CodeGen_Private::EPropertyClass::Float, "value", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FPSCharacter_eventMoveForward_Parms, value), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_value,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, "MoveForward", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FPSCharacter_eventMoveForward_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight()
+	{
+		struct FPSCharacter_eventMoveRight_Parms
+		{
+			float value;
+		};
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			static const UE4CodeGen_Private::FFloatPropertyParams NewProp_value = { UE4CodeGen_Private::EPropertyClass::Float, "value", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000080, 1, nullptr, STRUCT_OFFSET(FPSCharacter_eventMoveRight_Parms, value), METADATA_PARAMS(nullptr, 0) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_value,
+			};
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, "MoveRight", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(FPSCharacter_eventMoveRight_Parms), PropPointers, ARRAY_COUNT(PropPointers), 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_StartJump()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, "StartJump", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_StopJump()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, "StopJump", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_AFPSCharacter_NoRegister()
 	{
@@ -33,6 +121,12 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 			static UObject* (*const DependentSingletons[])() = {
 				(UObject* (*)())Z_Construct_UClass_ACharacter,
 				(UObject* (*)())Z_Construct_UPackage__Script_ThumbWars,
+			};
+			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_AFPSCharacter_MoveForward, "MoveForward" }, // 2488841890
+				{ &Z_Construct_UFunction_AFPSCharacter_MoveRight, "MoveRight" }, // 602583744
+				{ &Z_Construct_UFunction_AFPSCharacter_StartJump, "StartJump" }, // 74167985
+				{ &Z_Construct_UFunction_AFPSCharacter_StopJump, "StopJump" }, // 4029124474
 			};
 #if WITH_METADATA
 			static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
@@ -48,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				&AFPSCharacter::StaticClass,
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
-				nullptr, 0,
+				FuncInfo, ARRAY_COUNT(FuncInfo),
 				nullptr, 0,
 				nullptr,
 				&StaticCppClassTypeInfo,
@@ -59,7 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 2284967599);
+	IMPLEMENT_CLASS(AFPSCharacter, 2016902886);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFPSCharacter(Z_Construct_UClass_AFPSCharacter, &AFPSCharacter::StaticClass, TEXT("/Script/ThumbWars"), TEXT("AFPSCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFPSCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -13,8 +13,80 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define THUMBWARS_FPSCharacter_generated_h
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execStopJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StopJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStartJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StartJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMoveRight) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MoveRight(Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMoveForward) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MoveForward(Z_Param_value); \
+		P_NATIVE_END; \
+	}
+
+
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execStopJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StopJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStartJump) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StartJump(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMoveRight) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MoveRight(Z_Param_value); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execMoveForward) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->MoveForward(Z_Param_value); \
+		P_NATIVE_END; \
+	}
+
+
 #define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPSCharacter(); \
