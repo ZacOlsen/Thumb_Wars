@@ -17,21 +17,41 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	THUMBWARS_API UClass* Z_Construct_UClass_AFPSCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_ThumbWars();
+	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_Fire();
 	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward();
 	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_MoveRight();
 	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_StartJump();
 	THUMBWARS_API UFunction* Z_Construct_UFunction_AFPSCharacter_StopJump();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	THUMBWARS_API UClass* Z_Construct_UClass_AFPSProjectile_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 // End Cross Module References
 	void AFPSCharacter::StaticRegisterNativesAFPSCharacter()
 	{
 		UClass* Class = AFPSCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Fire", (Native)&AFPSCharacter::execFire },
 			{ "MoveForward", (Native)&AFPSCharacter::execMoveForward },
 			{ "MoveRight", (Native)&AFPSCharacter::execMoveRight },
 			{ "StartJump", (Native)&AFPSCharacter::execStartJump },
 			{ "StopJump", (Native)&AFPSCharacter::execStopJump },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
+	}
+	UFunction* Z_Construct_UFunction_AFPSCharacter_Fire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FFunctionParams FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, "Fire", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Function_MetaDataParams, ARRAY_COUNT(Function_MetaDataParams)) };
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UFunction* Z_Construct_UFunction_AFPSCharacter_MoveForward()
 	{
@@ -123,6 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				(UObject* (*)())Z_Construct_UPackage__Script_ThumbWars,
 			};
 			static const FClassFunctionLinkInfo FuncInfo[] = {
+				{ &Z_Construct_UFunction_AFPSCharacter_Fire, "Fire" }, // 8720140
 				{ &Z_Construct_UFunction_AFPSCharacter_MoveForward, "MoveForward" }, // 2488841890
 				{ &Z_Construct_UFunction_AFPSCharacter_MoveRight, "MoveRight" }, // 602583744
 				{ &Z_Construct_UFunction_AFPSCharacter_StartJump, "StartJump" }, // 74167985
@@ -135,6 +156,24 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				{ "ModuleRelativePath", "FPSCharacter.h" },
 			};
 #endif
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[] = {
+				{ "Category", "Projectile" },
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass = { UE4CodeGen_Private::EPropertyClass::Class, "ProjectileClass", RF_Public|RF_Transient|RF_MarkAsNative, 0x0014000000010001, 1, nullptr, STRUCT_OFFSET(AFPSCharacter, ProjectileClass), Z_Construct_UClass_AFPSProjectile_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(NewProp_ProjectileClass_MetaData, ARRAY_COUNT(NewProp_ProjectileClass_MetaData)) };
+#if WITH_METADATA
+			static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MuzzleOffset_MetaData[] = {
+				{ "Category", "Gameplay" },
+				{ "ModuleRelativePath", "FPSCharacter.h" },
+			};
+#endif
+			static const UE4CodeGen_Private::FStructPropertyParams NewProp_MuzzleOffset = { UE4CodeGen_Private::EPropertyClass::Struct, "MuzzleOffset", RF_Public|RF_Transient|RF_MarkAsNative, 0x0010000000000005, 1, nullptr, STRUCT_OFFSET(AFPSCharacter, MuzzleOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(NewProp_MuzzleOffset_MetaData, ARRAY_COUNT(NewProp_MuzzleOffset_MetaData)) };
+			static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[] = {
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_ProjectileClass,
+				(const UE4CodeGen_Private::FPropertyParamsBase*)&NewProp_MuzzleOffset,
+			};
 			static const FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 				TCppClassTypeTraits<AFPSCharacter>::IsAbstract,
 			};
@@ -143,7 +182,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 				DependentSingletons, ARRAY_COUNT(DependentSingletons),
 				0x00900080u,
 				FuncInfo, ARRAY_COUNT(FuncInfo),
-				nullptr, 0,
+				PropPointers, ARRAY_COUNT(PropPointers),
 				nullptr,
 				&StaticCppClassTypeInfo,
 				nullptr, 0,
@@ -153,7 +192,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 2016902886);
+	IMPLEMENT_CLASS(AFPSCharacter, 617073880);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AFPSCharacter(Z_Construct_UClass_AFPSCharacter, &AFPSCharacter::StaticClass, TEXT("/Script/ThumbWars"), TEXT("AFPSCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AFPSCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

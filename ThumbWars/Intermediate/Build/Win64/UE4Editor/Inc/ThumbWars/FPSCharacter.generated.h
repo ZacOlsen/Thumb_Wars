@@ -13,7 +13,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define THUMBWARS_FPSCharacter_generated_h
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Fire(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execStopJump) \
 	{ \
@@ -50,7 +58,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFire) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Fire(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execStopJump) \
 	{ \
@@ -87,7 +103,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_INCLASS_NO_PURE_DECLS \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPSCharacter(); \
 	friend THUMBWARS_API class UClass* Z_Construct_UClass_AFPSCharacter(); \
@@ -97,7 +113,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_INCLASS \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesAFPSCharacter(); \
 	friend THUMBWARS_API class UClass* Z_Construct_UClass_AFPSCharacter(); \
@@ -107,7 +123,7 @@ public: \
 	enum {IsIntrinsic=COMPILED_IN_INTRINSIC};
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_STANDARD_CONSTRUCTORS \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFPSCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFPSCharacter) \
@@ -120,7 +136,7 @@ private: \
 public:
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_ENHANCED_CONSTRUCTORS \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AFPSCharacter(AFPSCharacter&&); \
@@ -131,26 +147,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFPSCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFPSCharacter)
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_PRIVATE_PROPERTY_OFFSET
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_10_PROLOG
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_GENERATED_BODY_LEGACY \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_PRIVATE_PROPERTY_OFFSET
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_11_PROLOG
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_INCLASS \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_STANDARD_CONSTRUCTORS \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_RPC_WRAPPERS \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_INCLASS \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ThumbWars_Source_ThumbWars_FPSCharacter_h_13_GENERATED_BODY \
+#define ThumbWars_Source_ThumbWars_FPSCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_PRIVATE_PROPERTY_OFFSET \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_INCLASS_NO_PURE_DECLS \
-	ThumbWars_Source_ThumbWars_FPSCharacter_h_13_ENHANCED_CONSTRUCTORS \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	ThumbWars_Source_ThumbWars_FPSCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

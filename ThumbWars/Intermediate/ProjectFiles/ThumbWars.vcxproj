@@ -414,8 +414,11 @@
 		<None Include="..\..\Config\DefaultEditorSettings.ini" />
 		<None Include="..\..\Config\DefaultEngine.ini" />
 		<None Include="..\..\Config\DefaultGame.ini" />
+		<None Include="..\..\Config\DefaultInput.ini" />
 		<ClCompile Include="..\..\Source\ThumbWars\FPSCharacter.cpp" />
 		<ClInclude Include="..\..\Source\ThumbWars\FPSCharacter.h" />
+		<ClCompile Include="..\..\Source\ThumbWars\FPSProjectile.cpp" />
+		<ClInclude Include="..\..\Source\ThumbWars\FPSProjectile.h" />
 		<None Include="..\..\Source\ThumbWars\ThumbWars.Build.cs" />
 		<ClCompile Include="..\..\Source\ThumbWars\ThumbWars.cpp" />
 		<ClInclude Include="..\..\Source\ThumbWars\ThumbWars.h" />

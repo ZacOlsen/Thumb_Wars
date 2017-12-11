@@ -1,16 +1,9 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build.
-  Creating makefile for hot reloading ThumbWarsEditor (ini files are newer than UBTMakefile)
+  Creating makefile for hot reloading ThumbWarsEditor (modules to compile have changed)
   Compiling game modules for hot reload
   Parsing headers for ThumbWarsEditor
     Running UnrealHeaderTool "C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\ThumbWars.uproject" "C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\ThumbWarsEditor\Development\ThumbWarsEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
-  Reflection code generated for ThumbWarsEditor in 20.565575 seconds
-  Performing 5 actions (4 in parallel)
-  FPSCharacter.gen.cpp
-  ThumbWars.init.gen.cpp
-  FPSCharacter.cpp
-  [4/5] Link UE4Editor-ThumbWars-8956.dll
-  [5/5] Link UE4Editor-ThumbWars-8956.lib
-     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.exp
-     Creating library C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.suppressed.lib and object C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-ThumbWars-8956.suppressed.exp
-  Deploying ThumbWarsEditor Win64 Development...
-  Total build time: 322.73 seconds (Local executor: 200.89 seconds)
+  C:/Users/Default.SixCore-PC/Desktop/Thumb_Wars/ThumbWars/Source/ThumbWars/FPSProjectile.h(29) : LogCompile: Error: Unknown variable specifier 'VisibleDefaultOnly'
+  C:/Users/Default.SixCore-PC/Desktop/Thumb_Wars/ThumbWars/Source/ThumbWars/FPSProjectile.h(32) : LogCompile: Error: Unknown variable specifier 'VisibleDefaultOnly'
+EXEC : error : UnrealHeaderTool failed for target 'ThumbWarsEditor' (platform: Win64, module info: C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\Intermediate\Build\Win64\ThumbWarsEditor\Development\ThumbWarsEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+C:\Program Files (x86)\Visual Studio\Common7\IDE\VC\VCTargets\Microsoft.MakeFile.Targets(44,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.18\Engine\Build\BatchFiles\Build.bat" ThumbWarsEditor Win64 Development "C:\Users\Default.SixCore-PC\Desktop\Thumb_Wars\ThumbWars\ThumbWars.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.
